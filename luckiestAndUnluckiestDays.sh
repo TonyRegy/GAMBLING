@@ -23,16 +23,17 @@ if [ $c -eq 0 ]
 then
         echo "winner"
         stake=$(($stake + 1))
-        array[((m++))]=$stake
-        ((d++))
+        u=$(($stake - 100))
+        array[((m++))]=$u
+	((d++))
 else
         echo "you lose"
         g=$(($g + 1))
         array1[((n++))]=$g
         ((e++))
 fi
-won=${array[-1]}
-lost=${array1[-1]}
+gain=$u
+lost=$g
 gain=$(($won - 100))
 echo "amount won for the day" $gain
 echo "amount lost for day" $lost
