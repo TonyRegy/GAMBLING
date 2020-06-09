@@ -33,7 +33,7 @@ else
 fi
 won=${array[-1]}
 lost=${array1[-1]}
-gain=$(($h - $won))
+gain=$(($won - 100))
 echo "amount won for the day" $gain
 echo "amount lost for day" $lost
 done
